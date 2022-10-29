@@ -22,6 +22,7 @@ import java.io.File;
 import heronarts.lx.LX;
 import heronarts.lx.LXComponent;
 import heronarts.lx.LXPlugin;
+import heronarts.lx.app.pattern.BouncingBalls;
 import heronarts.lx.osc.LXOscComponent;
 import heronarts.lx.parameter.BoundedParameter;
 import heronarts.lx.studio.LXStudio;
@@ -109,6 +110,12 @@ public class LXStudioApp extends PApplet implements LXPlugin {
     // Register custom pattern and effect types
     lx.registry.addPattern(heronarts.lx.app.pattern.AppPattern.class);
     lx.registry.addPattern(heronarts.lx.app.pattern.AppPatternWithUI.class);
+    lx.registry.addPattern(heronarts.lx.app.pattern.PumpIt.class);
+    lx.registry.addPattern(heronarts.lx.app.pattern.BasicRainbowPattern.class);
+    lx.registry.addPattern(heronarts.lx.app.pattern.AlternatingPattern.class);
+    lx.registry.addPattern(BouncingBalls.class);
+
+
     lx.registry.addEffect(heronarts.lx.app.effect.AppEffect.class);
 
     // Create an instance of your global component and register it with the LX engine
