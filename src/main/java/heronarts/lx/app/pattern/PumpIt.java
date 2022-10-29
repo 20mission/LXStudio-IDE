@@ -61,7 +61,7 @@ public class PumpIt extends LXPattern {
 
 //        System.out.println("model.children.length" + model.children.length);
 //        System.out.println("motion: " + motion);
-            for (List<Integer> strips : FixtureMap.getStrips()) {
+            for (List<Integer> strips : FixtureMap.getRows()) {
                 int totalPointsInChildren = 0;
 
                 for (Integer childIndex : strips) {

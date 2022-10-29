@@ -11,7 +11,7 @@ public class FixtureMap {
     static int totalStrips = 8;
     public static int[] maxCoords = {pointsPerStrip, totalStrips};
     static int[] stripLengths = { 170, 10 };
-    public static List<List<Integer>> getStrips() {
+    public static List<List<Integer>> getRows() {
         return Arrays.asList(
                 Arrays.asList(0, 1),
                 Arrays.asList(2, 3),
@@ -31,7 +31,7 @@ public class FixtureMap {
             System.out.println("Invalid coordinates: " + x + ", " + y);
             return null;
         }
-        List<List<Integer>> strips = getStrips();
+        List<List<Integer>> strips = getRows();
         List<Integer> row = strips.get(y);
         int colIndex = 0;
         int colCumulative = 0;
